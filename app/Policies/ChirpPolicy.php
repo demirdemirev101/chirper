@@ -37,7 +37,7 @@ class ChirpPolicy
      */
     public function update(User $user, Chirp $chirp): bool
     {
-        return $user->id === $user->id;
+        return $user->id === $chirp->user_id;
     }
 
     /**
@@ -45,7 +45,7 @@ class ChirpPolicy
      */
     public function delete(User $user, Chirp $chirp): bool
     {
-        return $user->id === $user->id;
+        return $user->id === $chirp->user_id;
     }
 
     /**
